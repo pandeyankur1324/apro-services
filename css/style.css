@@ -214,7 +214,7 @@ ul {
 }
 
 /* logo */
-#Layer_1{
+#Layer_1 {
   transform: translate(-290px, -20px);
 }
 
@@ -224,34 +224,36 @@ ul {
   animation: bounce 2s linear infinite;
 } */
 
-#dot{
+#dot {
   transform: translate(-5px, 0px);
   animation: bounce_dot 2s linear infinite;
 }
 
-.letter_a, .letter_o{
+.letter_a,
+.letter_o {
   animation: bounce 2s linear infinite;
   transform: translate(-149px, 97px);
 }
 
-@keyframes bounce{
-  0%,100%{
+@keyframes bounce {
+  0%,
+  100% {
     transform: translate(-149px, 97px);
   }
-  50%{
+  50% {
     transform: translate(-149px, 87px);
   }
 }
 
-@keyframes bounce_dot{
-  0%,100%{
+@keyframes bounce_dot {
+  0%,
+  100% {
     transform: translate(-5px, 0px);
   }
-  50%{
+  50% {
     transform: translate(-5px, -10px);
   }
 }
-
 
 /* logo end */
 
@@ -689,8 +691,6 @@ ul {
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: relative;
-  width: 100vw;
-  height: 100vh;
   z-index: 1;
 }
 
@@ -1126,7 +1126,6 @@ ul {
   margin-bottom: 10px;
 }
 
-
 .footer-col ul li a {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
@@ -1242,6 +1241,15 @@ ul {
   .fun-facts .section-title h2 {
     text-align: center;
   }
+  .footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .fun-facts-text p{
+    text-align: center;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1256,4 +1264,3 @@ ul {
     font-size: 30px;
   }
 }
-
