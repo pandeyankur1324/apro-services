@@ -28,7 +28,7 @@ body {
   line-height: 1.5;
 }
 
-body.dark{
+body.dark {
   background-color: var(--bg-dark);
   --black-100: var(--bg-dark);
   --black-000: var(--bg-dark);
@@ -134,11 +134,11 @@ ul {
   }
 }
 
-@keyframes zoomInOut_01{
-  0%{
+@keyframes zoomInOut_01 {
+  0% {
     transform: scale(0);
   }
-  100%{
+  100% {
     transform: scale(1);
     opacity: 0;
   }
@@ -213,9 +213,51 @@ ul {
   background-color: var(--main-color);
 }
 
+/* logo */
+#Layer_1{
+  transform: translate(-290px, -20px);
+}
+
+/* #logo {
+  width: 40%;
+  transform: translate(10px, 10px);
+  animation: bounce 2s linear infinite;
+} */
+
+#dot{
+  transform: translate(-5px, 0px);
+  animation: bounce_dot 2s linear infinite;
+}
+
+.letter_a, .letter_o{
+  animation: bounce 2s linear infinite;
+  transform: translate(-149px, 97px);
+}
+
+@keyframes bounce{
+  0%,100%{
+    transform: translate(-149px, 97px);
+  }
+  50%{
+    transform: translate(-149px, 87px);
+  }
+}
+
+@keyframes bounce_dot{
+  0%,100%{
+    transform: translate(-5px, 0px);
+  }
+  50%{
+    transform: translate(-5px, -10px);
+  }
+}
+
+
+/* logo end */
+
 /* Preloader */
 
-.preloader{
+.preloader {
   position: fixed;
   left: 0;
   top: 0;
@@ -228,7 +270,7 @@ ul {
   justify-content: center;
 }
 
-.preloader span{
+.preloader span {
   display: block;
   height: 60px;
   width: 60px;
@@ -259,7 +301,6 @@ ul {
   font-size: 30px;
   color: #ffffff;
   font-weight: 500;
-  text-transform: capitalize;
 }
 
 .navbar .nav-item {
@@ -616,11 +657,11 @@ ul {
 
 /* website portfolio section */
 
-.website-portfolio{
+.website-portfolio {
   background-color: var(--black-100);
 }
 
-.portfolio-item.app-download-item{
+.portfolio-item.app-download-item {
   background-color: var(--black-100);
   padding: 30px;
   text-align: center;
@@ -629,11 +670,11 @@ ul {
   margin: 20px 0;
 }
 
-.portfolio-item{
+.portfolio-item {
   margin-top: 5px 0 30px 0;
 }
 
-.portfolio-item-img img{
+.portfolio-item-img img {
   margin-bottom: 25px;
   border-radius: 10px;
   box-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
@@ -918,11 +959,11 @@ ul {
 
 /* FAQ Section */
 
-.faq .accordion-item:not(:last-child){
+.faq .accordion-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.faq .accordion-header{
+.faq .accordion-header {
   box-shadow: var(--shadow-black-100);
   padding: 20px 50px 20px 30px;
   transition: all 0.5s ease;
@@ -930,9 +971,9 @@ ul {
   position: relative;
 }
 
-.faq .accordion-header::before{
+.faq .accordion-header::before {
   content: "\f067";
-  font-family: 'Font Awesome 5 free';
+  font-family: "Font Awesome 5 free";
   font-weight: 900;
   position: absolute;
   height: 30px;
@@ -947,18 +988,17 @@ ul {
   transition: all 0.5s ease;
 }
 
-.faq .accordion-header:not(.collapsed)::before{
+.faq .accordion-header:not(.collapsed)::before {
   content: "\f068";
   color: #ffffff;
 }
 
-.faq .accordion-header:not(.collapsed){
+.faq .accordion-header:not(.collapsed) {
   background-color: var(--main-color);
   box-shadow: none;
-
 }
 
-.faq .accordion-header h3{
+.faq .accordion-header h3 {
   font-size: 18px;
   font-weight: 500;
   color: var(--black-400);
@@ -966,16 +1006,16 @@ ul {
   transition: all 0.5s ease;
 }
 
-.faq .accordion-header:not(.collapsed) h3{
+.faq .accordion-header:not(.collapsed) h3 {
   color: #ffffff;
 }
 
-.faq .accordion-body{
+.faq .accordion-body {
   padding: 20px 30px;
   background-color: var(--black-100);
 }
 
-.faq .accordion-body p{
+.faq .accordion-body p {
   font-weight: 300;
   font-size: 16px;
   color: var(--black-400);
@@ -985,24 +1025,24 @@ ul {
 
 /* Contact Section */
 
-.contact{
+.contact {
   background-color: var(--black-100);
 }
 
-.contact-info h3{
+.contact-info h3 {
   font-size: 22px;
   color: var(--black-900);
   font-weight: 500;
   margin: 0 0 40px;
 }
 
-.contact-info-item{
+.contact-info-item {
   position: relative;
   padding-left: 55px;
   margin-bottom: 30px;
 }
 
-.contact-info-item i{
+.contact-info-item i {
   position: absolute;
   height: 40px;
   width: 40px;
@@ -1014,15 +1054,14 @@ ul {
   border: 1px solid var(--main-color);
   text-align: center;
   line-height: 38px;
-
 }
-.contact-info-item h4{
+.contact-info-item h4 {
   font-size: 18px;
   font-weight: 400;
   margin: 0 0 10px;
   color: var(--black-900);
 }
-.contact-info-item p{
+.contact-info-item p {
   font-size: 16px;
   font-weight: 300;
   margin: 0;
@@ -1030,11 +1069,11 @@ ul {
   color: var(--black-400);
 }
 
-.contact-form .form-group{
+.contact-form .form-group {
   margin-bottom: 25px;
 }
 
-.contact-form .form-control{
+.contact-form .form-control {
   height: 52px;
   border: 1px solid transparent;
   box-shadow: var(--shadow-black-100);
@@ -1045,23 +1084,23 @@ ul {
   transition: all 0.5s ease;
 }
 
-.contact-form textarea.form-control{
+.contact-form textarea.form-control {
   height: 140px;
   padding-top: 12px;
   resize: none;
 }
-.contact-form .form-control:focus{
+.contact-form .form-control:focus {
   border-color: var(--main-color);
 }
 
 /* Footer Section */
 
-.footer{
+.footer {
   background-color: var(--main-color);
   padding: 50px 0 0;
 }
 
-.footer-col h3{
+.footer-col h3 {
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
@@ -1069,24 +1108,24 @@ ul {
   text-transform: capitalize;
 }
 
-.footer-col p{
-  font-size: 16px; 
+.footer-col p {
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 300;
   line-height: 26px;
   margin: 0;
 }
 
-.footer-col ul{
+.footer-col ul {
   margin: 0;
 }
 
-.footer-col ul li:not(:last-child){
+.footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.footer-col ul li a{
-  font-size: 16px; 
+.footer-col ul li a {
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 300;
   display: block;
@@ -1095,14 +1134,14 @@ ul {
   text-decoration: none;
 }
 
-.footer-col ul li a:hover{
+.footer-col ul li a:hover {
   padding-left: 5px;
 }
 
-.footer .copyright-text{
+.footer .copyright-text {
   padding: 20px 0;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 300;
   margin: 50px 0 0;
@@ -1111,7 +1150,7 @@ ul {
 
 /* Toogle Theme */
 
-.toggle-theme{
+.toggle-theme {
   position: fixed;
   right: 0;
   top: calc(50% - 20px);
@@ -1127,14 +1166,14 @@ ul {
   text-align: center;
 }
 
-.toggle-theme i{
+.toggle-theme i {
   line-height: 40px;
 }
 
 /* Responsive*/
 
-@media(max-width: 991px){
-  .navbar-toggler{
+@media (max-width: 991px) {
+  .navbar-toggler {
     background-color: var(--dark-to-main-color);
     box-shadow: var(--shadow-black-300);
     height: 34px;
@@ -1143,74 +1182,74 @@ ul {
     font-size: 17px;
     color: #ffffff;
   }
-  .navbar-nav{
+  .navbar-nav {
     background-color: var(--dark-to-main-color);
     box-shadow: var(--shadow-black-300);
   }
-  .navbar .nav-item{
+  .navbar .nav-item {
     margin: 0;
     padding: 5px 15px;
   }
   .navbar.navbar-shrink .navbar-toggler,
-  .navbar.navbar-shrink .navbar-nav{
+  .navbar.navbar-shrink .navbar-nav {
     background-color: var(--main-color);
   }
-  .home-img .circle{
+  .home-img .circle {
     height: 320px;
     width: 320px;
   }
-  .home-img .circle::before{
+  .home-img .circle::before {
     left: 18px;
     top: 18px;
     transform-origin: 142px 142px;
   }
-  .home-text h1{
+  .home-text h1 {
     font-size: 40px;
   }
   .pricing-plan,
   .how-it-works-item,
-  .app-download-item{
+  .app-download-item {
     margin-bottom: 30px;
   }
-  .how-it-works-item.line-right::before{
+  .how-it-works-item.line-right::before {
     content: none;
   }
-  .how-it-works-item{
+  .how-it-works-item {
     box-shadow: var(--shadow-black-100);
     border-radius: 10px;
   }
-  .footer-col{
+  .footer-col {
     margin-bottom: 30px;
   }
 }
 
-@media(max-width: 767px){
-  .home-text{
+@media (max-width: 767px) {
+  .home-text {
     margin-bottom: 80px;
   }
-  .fun-facts-img{
+  .fun-facts-img {
     margin-bottom: 30px;
   }
-  .contact-form{
+  .contact-form {
     margin-top: 20px;
   }
-  .section-title h2{
+  .section-title h2 {
     font-size: 35px;
   }
-  .fun-facts .section-title h2{
+  .fun-facts .section-title h2 {
     text-align: center;
   }
 }
 
-@media(max-width: 575px){
-  .home-text h1{
+@media (max-width: 575px) {
+  .home-text h1 {
     font-size: 30px;
   }
-  .home-text p{
+  .home-text p {
     font-size: 16px;
   }
 
-  .section-title h2{
+  .section-title h2 {
     font-size: 30px;
   }
 }
