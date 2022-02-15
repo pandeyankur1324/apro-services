@@ -1264,3 +1264,9 @@ ul {
     font-size: 30px;
   }
 }
+
+@media (max-width: 321px){
+  .portfolio{
+    margin: 0 0 0 9px !important;
+  }
+}
