@@ -1095,6 +1095,35 @@ ul {
   border-color: var(--main-color);
 }
 
+.thanks_msg {
+  padding-top: 15px;
+  margin: 0;
+}
+
+.thanks_msg > h3 {
+  margin: 0;
+  color: var(--main-color);
+}
+
+#animation {
+  animation: disappear 4s ease forwards;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 /* Footer Section */
 
 .footer {
@@ -1247,7 +1276,7 @@ ul {
     justify-content: center;
     text-align: center;
   }
-  .fun-facts-text p{
+  .fun-facts-text p {
     text-align: center;
   }
 }
@@ -1265,8 +1294,8 @@ ul {
   }
 }
 
-@media (max-width: 321px){
-  .portfolio{
+@media (max-width: 321px) {
+  .portfolio {
     margin: 0 0 0 9px !important;
   }
 }
